@@ -1,0 +1,190 @@
+**** 9 Questions MCQ ****
+
+
+Q1
+2.0/2.0 points (graded)
+Consider the Dumbo program given below.
+
+   i.  Use locations A, B;
+  ii.  Output "Give A and B: ";
+ iii.  A = 76; 
+  iv.  B = 175;
+   v.  B = A + B;
+  vi.  A = A + B;
+ vii.  Output A;
+viii.  Output B;
+
+What value will be printed by the statement 'Output A'. Write your numerical answer in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+327
+What value will be printed by the statement 'Output B'. Write your numerical answer in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+251
+*************************************************************************************************
+Q2
+1.0/1.0 point (graded)
+What is the integer equivalent represented by 2's complement of the binary number 10011010 ?
+-102
+*************************************************************************************************
+Q3
+1.0/1.0 point (graded)
+Following names are chosen by a programmer for using them as variable names. Identify the option having a valid variable name.
+foreach
+*************************************************************************************************
+Q4
+1.0/1.0 point (graded)
+Consider the program given below
+
+
+int main() {
+    int d = 10;
+    int m = 2;
+    int y = 3603;
+    int c = 0;
+    int val;
+    val = ( d + m + y + (y/4) + c) % 7;
+    cout << val;
+    return 0;
+}  
+
+What value will be printed by the statement 'cout << val'. Write your numerical answer in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+0
+*************************************************************************************************
+Q5
+1.0/1.0 point (graded)
+Consider the program given below
+
+
+     	if( (number1 >= 0) && (number2 <=1) )
+          cout<<"Good ";
+
+      	if( (number1 >= 2) && (number2 > 2) )
+          cout<<"Twilight ";
+
+      	if( (number1 <= 1) && (number2 >= 1) )
+          cout<<"John ";
+
+      	if( (number1 > 0) && (number2 >=1) )
+         cout<<"Kennedy ";
+
+      	if( (number1 == 3) && (number2 != 3) )
+         cout<<"Jaipur";
+
+What would be the output, if the user entered integer value 1 for number1 and integer value 1 for number2
+Good John Kennedy
+*************************************************************************************************
+Q6
+1.0/1.0 point (graded)
+Consider the program given below.
+
+
+int main() { 
+    int a = 7;
+    int b = 8;
+    int lamp, light;
+ 
+    lamp = 5*a + 2*b;
+    light = 4*a + 8*b;
+ 
+    while(lamp < light) {
+        lamp = lamp + 4;
+        light = light - 2;
+    }
+    return 0;
+}
+
+How many times does the while loop execute. Write your numerical answer in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+7
+*************************************************************************************************
+Q7
+1.0/1.0 point (graded)
+Consider the program given below.
+
+
+int main() {
+    char s1 = 'k', s2;
+    int i = 0, j = 0, k = 1;
+   
+    for(i = 0; i <= 3; i++) {
+        s2 = s1;
+        for(j = 0; j <= k; j++) {
+            s2++;
+        }
+        s1 = s1 + 2;
+        k = k + 1;
+    }
+
+    cout << s2;    
+    return 0;
+}
+
+What value will be printed by the statement 'cout << s2;'. Write your answer (character) in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+v
+*************************************************************************************************
+Q8
+1.0/1.0 point (graded)
+Consider the program given below
+
+
+int main () {
+    int a = 4; 
+    int num1, num2;
+    num1 = 448;
+    num2 = 36; 
+    
+    for ( ; ; ) {
+       a = a * 3;
+       if(a > num1) {
+          a = a - 5; 
+          break;
+        }
+    }
+
+    while(true) {
+        a = a / 3; 
+        if(a < num2) { 
+            a = a - 5; 
+            break;
+        }
+    }
+    cout << a;
+    return 0;
+} 
+
+What value will be printed by the statement 'cout << a;'. Write your numerical answer in the textbox given below. 
+Please make sure that you do not enter any space in the textbox.
+30
+*************************************************************************************************
+Q9
+1.0/1.0 point (graded)
+Consider the program given below
+
+
+#include<iostream>
+using namespace std;
+int main() {
+    int c, b, a, k, g;
+    cout << "Enter two numbers:";
+    cin >> c >> b;
+    a = c;
+    k = b;
+ 
+     while(STATEMENT 1){
+        if(c > b) 
+            STATEMENT 2
+        else 
+            b = b - c; 
+    }
+    STATEMENT 3
+  
+    return 0;
+}     
+
+Choose the correct option.
+If we replace STATEMENT 1 with c != b and 
+STATEMENT 2 with c = c - b; and 
+STATEMENT 3 with g = a * k / c; , 
+then the program computes LCM of the two numbers (c and b) and stores the result in g  
