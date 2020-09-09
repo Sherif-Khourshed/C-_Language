@@ -96,3 +96,4 @@ int main(void)
 	solutionRPM(rpm, years, res);
 	*/
 }
+
