@@ -18,8 +18,8 @@ using namespace std;
 void detectHappy(int number, int &finalNumber, int &cycle_no) {
 
     //Write your solution code below this line
-    int i, sum, digit;
-    for(i = 1; i <= 10; i++)
+    int sum, digit;
+    for(cycle_no = 1; cycle_no <= 10; cycle_no++)
     {
         sum = 0;
         while(number > 0)
@@ -30,22 +30,18 @@ void detectHappy(int number, int &finalNumber, int &cycle_no) {
         }
         if(sum == 1)
         {
-
             finalNumber = sum;
             cout << "finalNumber is " << finalNumber;
-            cycle_no = i;
             cout << "cycle_no is " << cycle_no;
-
             break;
         }
         else
         {
             number = sum;
-            if(i == 10)
+            if(cycle_no == 10)
             {
             finalNumber = sum;
             cout << "finalNumber is " << finalNumber;
-            cycle_no = i;
             cout << "cycle_no is " << cycle_no;
             break;
             }
@@ -65,4 +61,3 @@ int main (void)
 {
 
 }
-
