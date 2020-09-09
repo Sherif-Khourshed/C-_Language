@@ -1,0 +1,229 @@
+**** 12 Questions MCQ ****
+
+*** PPS 02 - Set I ***
+
+Q1
+1.0/1.0 point (graded)
+Which of the following pairs will indicate the same boolean value?
+false, 0
+*************************************************************************************************
+Q2
+1.0/1.0 point (graded)
+Following names are chosen by a programmer for using them as variable names. Which of these is an illegal choice?
+case
+*************************************************************************************************
+Q3
+1.0/1.0 point (graded)
+What will be the number printed when cout << a - b is executed?
+
+    
+#include<iostream>
+using namespace std;
+int main() {
+   int a = 020;
+   float b = 10.5;
+   cout << a - b << endl;
+   return 0;
+}
+5.5
+*************************************************************************************************
+Q4
+1.0/1.0 point (graded)
+Assume that a, b, c, val1, val2, and val3 are integer variables. val1, val2, 
+and val3 are computed as shown below. What will be output of the following program snippet given.
+
+    
+   int a = 0, b = 1, c = 0, val1, val2, val3;
+   val1 = !(a || b || c);
+   val2 = a || b && c ;
+   val3 = !(a && b || c) ;
+   cout << val1 << val2 << val3;
+001
+*************************************************************************************************
+Q5
+1.0/1.0 point (graded)
+Consider the following C++ program.
+
+    
+#include<iostream>
+using namespace std ;
+int main () {
+   int n ;
+   cout << " Give n : " ;
+   cin >> n ;
+   if ( n < 0) {
+      switch ( n ) {
+         case 0:
+            cout << " so " ;
+         case -1: 
+            cout << " how is your " ;
+         case -10: 
+            cout << " parrot 's " ;
+         break ;
+         default : 
+            cout << " cat 's " ;
+      }
+      cout << " health ? " ;
+   }
+   else {
+      switch ( n ) {
+         case 0: 
+            cout << " so " ;
+         case 1: 
+            cout << " how is your " ;
+         case 10: 
+            cout << " cat 's " ;
+         default : 
+            cout << " health ? " ;
+      }
+   }
+   cout << endl ;
+   return 0;
+}
+
+  
+Which of the following strings CANNOT be printed by the above program for any value of the input 'n' ?
+so how is your health?
+*************************************************************************************************
+Q6
+1.0/1.0 point (graded)
+Consider the following code snippet. Assume that all necessary header files and statements are written,
+and the variables 'number1' and 'number2' are declared as integer variables.
+
+    
+     if(number1 >= 1)
+          cout<<"Good ";
+
+     if( (number1 == 1) && (number2 > 2) )
+          cout<<"Morning ";
+
+     if( (number1 <= 1) && (number2 >= 2) )
+          cout<<"Afternoon";
+
+     if( (number1 > 1) && (number2 >2) )
+          cout<<"Evening";
+
+  
+What would be the output of the code snippet given above, if the user entered integer value '1' for number1 and integer value '2' for number2
+Good Afternoon
+*************************************************************************************************
+
+
+*** PPS 02 - Set II ***
+
+Q1
+1.0/1.0 point (graded)
+Which of the following given below will be ignored (not executed) by the C++ compiler?
+//This is a Hello world! program in C++
+*************************************************************************************************
+Q2
+1.0/1.0 point (graded)
+Identify the valid variable names from the following
+
+    I)    intHeight
+II)   boolIsTrue
+III)  2values
+IV)   continue
+V)    intWidth?
+VI)   intPerimeter
+VII)  floatSquareRoot
+VIII) double_Square_Root
+I, II, VI, VII, and VIII are valid
+*************************************************************************************************
+Q3
+1.0/1.0 point (graded)
+What will be the number printed when cout << a + b is executed?
+
+    
+#include<iostream>
+using namespace std;
+int main() {
+   int a=0x50;
+   float b=7.4;
+   cout << a + b << endl;
+   return 0;
+}
+87.4
+*************************************************************************************************
+Q4
+1.0/1.0 point (graded)
+As per the code snippet given below, the integer variables val1, val2, and val3 are computed. What will be output of the following program snippet given.
+
+    
+   int a = 1, b = 0, c = 1, val1, val2, val3;
+   val1 = a && !(b && c);
+   val2 = !(a && b) || c ;
+   val3 = a && !(b || c) ;
+   cout << val1 << val2 << val3 ;
+110
+*************************************************************************************************
+Q5
+1.0/1.0 point (graded)
+Consider the following 2 code snippets.
+
+Code Snippet 1
+    
+   switch ( weather ) {
+      case 1:
+         cout <<" Grilled " ;
+      break ;
+      case 3:
+         cout <<" Freezed " ;
+      break ;
+      default :
+         cout <<" Room Temperature " ;
+   }
+
+  
+
+Code Snippet 2
+    
+   if ( weather <= 1) {
+      cout <<" Grilled " ;
+   } 
+   else if ( weather >= 3) {
+      cout << " Freezed " ;
+   }
+   else {
+      cout <<" Room Temperature " ;
+   }
+
+  
+Which of the following is true for the code snippets given above
+For only some values of variable 'weather', both the code snippets will give same output
+*************************************************************************************************
+Q6
+1.0/1.0 point (graded)
+Consider the following code snippet.
+
+    
+int main(){
+
+   int number1=1, number2;
+   cin >> number2;
+   switch (number1) {
+      case 1:  
+         cout <<" Happy ";
+      case 2:
+         if (number2 < 0 )
+            cout << " Holidays ";
+         if (number2 > 10 && (number2 % 3 == 0) )
+            cout << "Birthday ";
+         if (number2 > 5 && (number2 % 2 == 0) )
+            cout <<"to you ";
+      break;
+      case 3:
+         cout << "Ending ";
+      break;
+      default:
+         cout << " Good luck next time! ";
+   }
+
+   return 0;
+}
+
+
+  
+The value of variable 'number1' is 1. If the program is executed for the values of number2 from 10 to 30, 
+how many times, the statement "Happy Birthday to you" will NOT be printed?
+17
